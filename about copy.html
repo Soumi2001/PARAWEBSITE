@@ -80,14 +80,20 @@
                         <a href="service copy.html" class="nav-item nav-link">Services</a>
                         <a href="package copy.html" class="nav-item nav-link">Tour Packages</a>
                         <!-- <a href="SOUMI.HTML" class="nav-item nav-link">SOUMITRI</a> -->
-                        <a href="index.html" onClick="alert('you are log out!')" class="nav-item nav-link">SOUMITRI</a>
+                        <a href="index.html" onClick="alert('you are log out!')" class="nav-item nav-link"><span id="nn"></span></a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
     <!-- Navbar End -->
+    <script lang="JavaScript">
 
+        const un = localStorage.getItem('u-n');
+        var array = un.split("@",1);
+        document.getElementById('nn').textContent = array;
+
+    </script>
 
     <!-- Header Start -->
     <div class="container-fluid page-header">
@@ -404,8 +410,8 @@
             <a class="text-white-50 mb-2" href="https://www.makemytrip.com/flights/"><i class="fa fa-angle-right mr-2"></i>Flight Booking</a>
             <a class="text-white-50 mb-2" href="https://www.goibibo.com/hotels/"><i class="fa fa-angle-right mr-2"></i>Hotel Booking</a>
             <a class="text-white-50 mb-2" href="https://www.irctc.co.in/nget/train-search"><i class="fa fa-angle-right mr-2"></i>Train Booking</a>
-            <a class="text-white-50 mb-2" href="https://www.redbus.in/"https://www.redbus.in/><i class="fa fa-angle-right mr-2"></i>Bus Booking</a>
-            <a class="text-white-50 mb-2" href="https://www.redbus.in/"><i class="fa fa-angle-right mr-2"></i>Cab Booking</a>
+            <a class="text-white-50 mb-2" href="https://www.redbus.in/"><i class="fa fa-angle-right mr-2"></i>Bus Booking</a>
+            <a class="text-white-50 mb-2" href="https://www.olacabs.com/"><i class="fa fa-angle-right mr-2"></i>Cab Booking</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
